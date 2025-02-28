@@ -39,19 +39,19 @@
                     <img src="assets/images/png/bg-screen.png" alt="background-screen"
                         class="w-[1097px] xl:h-[692px] sm:h-[500px] h-[420px] mx-auto screen">
                     <img src="assets/images/png/box-icon.png" alt="box-icons"
-                        class="absolute 2xl:left-[27%] xl:left-[22%] lg:left-[17%] sm:left-[25%] left-[15%] xl:top-[24%] lg:top-[18%] top-[31%] box opacity-0 lg:max-w-[678px] sm:max-w-[350px] max-w-[280px]">
+                        class="absolute 2xl:left-[27%] xl:left-[22%] lg:left-[17%] sm:left-[25%] left-[15%] xl:top-[24%] lg:top-[18%] top-[31%] box opacity-0 lg:max-w-[678px] sm:max-w-[350px] max-w-[260px]">
                     <img src="assets/images/png/meeting.png" alt="box-icons"
-                        class="absolute 2xl:left-[35%] xl:left-[31%] lg:left-[33%] sm:left-[29%] left-[9%] xl:top-[16%] top-[12%] box1 opacity-0 xl:max-w-[440px] sm:max-w-[350px] max-w-[311px]">
+                        class="absolute 2xl:left-[35%] xl:left-[31%] lg:left-[37%] sm:left-[29%] left-[17%] xl:top-[16%] lg:top-[18%] md:top-[20%] top-[19%] box1 opacity-0 xl:max-w-[440px] lg:max-w-[300px] md:max-w-[285px] sm:max-w-[350px] max-w-[250px]">
                     <img src="assets/images/png/chat.png" alt="box-icons"
-                        class="absolute 2xl:left-[35%] sm:left-[29%] left-[14%] top-[14%] box2 opacity-0 xl:max-w-[533px] sm:max-w-[415px] max-w-[289px]" >
+                        class="absolute 2xl:left-[35%] sm:left-[29%] left-[14%] lg:top-[20%] md:top-[22%]  top-[25%] box2 opacity-0 xl:max-w-[500px] lg:max-w-[371px] sm:max-w-[333px] max-w-[250px]" >
                     <img src="assets/images/png/nex-chat.png" alt="box-icons"
-                        class="absolute 2xl:left-[32%] sm:left-[29%] left-[11%] sm:top-[20%] top-[27%] box3 opacity-0 xl:max-w-[541px] sm:max-w-[415px] max-w-[308px]">
+                        class="absolute 2xl:left-[32%] sm:left-[29%] left-[14%] sm:top-[20%] top-[27%] box3 opacity-0 xl:max-w-[541px] sm:max-w-[415px] max-w-[260px]">
                     <img src="assets/images/png/mail-box.png" alt="box-icons"
-                        class="absolute 2xl:left-[41%] lg:left-[38%] sm:left-[32%] left-[11%] xl:top-[38%] sm:top-[32%] top-[27%] box4 opacity-0">
+                        class="absolute 2xl:left-[41%] lg:left-[38%] sm:left-[32%] left-[17%] xl:top-[38%] sm:top-[32%] top-[27%] box4 opacity-0 max-sm:max-w-[250px]">
                     <img src="assets/images/png/mail-lock.png" alt="box-icons"
-                        class="absolute 2xl:left-[41%] max-w-[308px] lg:left-[38%] sm:left-[33%] left-[11%]  xl:top-[34%] sm:top-[32%] top-[29%] box5 opacity-0">
+                        class="absolute 2xl:left-[41%] sm:max-w-[308px] lg:left-[38%] sm:left-[33%] left-[23%]  xl:top-[34%] sm:top-[32%] top-[36%] box5 opacity-0 max-w-[210px]">
                     <img src="assets/images/png/details.png" alt="box-icons"
-                        class="absolute 2xl:left-[26%] lg:left-[22%] sm:left-[15%] left-[11%] sm:top-[14%] xl:top-[18%] top-[12%] box6 opacity-0 xl:max-w-[717px] sm:max-w-[560px] max-w-[300px] max-sm:h-[315px]">
+                        class="absolute 2xl:left-[26%] lg:left-[22%] sm:left-[15%] left-[15%] sm:top-[14%] xl:top-[18%] top-[20%] box6 opacity-0 xl:max-w-[717px] sm:max-w-[560px] max-w-[250px] max-sm:h-[250px]">
 
                 </div>
                 <div class="flex flex-wrap justify-center items-center buttons max-w-[1295px] mx-auto ">
@@ -154,11 +154,6 @@
                 }
             );
 
-            tl.to(".box", {
-                opacity: 0,
-                duration: 2,
-                scale:0
-            })
             tl.fromTo(".bottom-img",
                     {
                         y: -100
@@ -179,6 +174,11 @@
                     backgroundColor: "#A0BFCA",
                 }
             );
+            tl.to(".box", {
+                    opacity: 0,
+                    duration: 2,
+                    scale: 0
+                })
             tl.fromTo(".box1",
                 {
                     
@@ -193,13 +193,7 @@
 
                 }
             );
-            tl.to(".box1",
-                {
-                    opacity: 0,
-                    duration: 2,
-                    scale: 0
-                },
-            );
+            
             tl.to(".button1",
                 {
                     rotate: 0,
@@ -207,6 +201,13 @@
                     backgroundColor: "#B5EFCB",
                 }
             );
+            tl.to(".box1",
+                    {
+                        opacity: 0,
+                        duration: 2,
+                        scale: 0
+                    },
+                );
             tl.fromTo(".bottom-img",
                     {
                         y: -200
@@ -227,6 +228,7 @@
                     backgroundColor: "#A0BFCA",
                 }
             );
+            
             tl.fromTo(".box2",
                 {
                     
@@ -241,13 +243,7 @@
 
                 }
             );
-            tl.to(".box2",
-                {
-                    opacity: 0,
-                    duration: 2,
-                    scale: 0
-                },
-            );
+            
             tl.to(".button2",
                 {
                     rotate: 0,
@@ -255,6 +251,13 @@
                     backgroundColor: "#B5EFCB",
                 }
             );
+            tl.to(".box2",
+                    {
+                        opacity: 0,
+                        duration: 2,
+                        scale: 0
+                    },
+                );
             tl.fromTo(".bottom-img",
                     {
                         y: -400
@@ -289,13 +292,7 @@
 
                 }
             );
-            tl.to(".box3",
-                {
-                    opacity: 0,
-                    duration: 2,
-                    scale: 0
-                },
-            );
+            
             tl.to(".button3",
                 {
                     rotate: 0,
@@ -303,6 +300,13 @@
                     backgroundColor: "#B5EFCB",
                 }
             );
+            tl.to(".box3",
+                    {
+                        opacity: 0,
+                        duration: 2,
+                        scale: 0
+                    },
+                );
             tl.fromTo(".bottom-img",
                     {
                         y: -600
