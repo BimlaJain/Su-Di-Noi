@@ -41,7 +41,7 @@
                     <img src="assets/images/png/box-icon.png" alt="box-icons"
                         class="absolute 2xl:left-[27%] xl:left-[22%] lg:left-[17%] sm:left-[25%] left-[15%] xl:top-[24%] lg:top-[18%] top-[31%] box opacity-0 lg:max-w-[678px] sm:max-w-[350px] max-w-[280px]">
                     <img src="assets/images/png/meeting.png" alt="box-icons"
-                        class="absolute 2xl:left-[35%] xl:left-[31%] lg:left-[33%] sm:left-[29%] left-[9%] top-[12%] box1 opacity-0 xl:max-w-[476px] sm:max-w-[350px] max-w-[311px]">
+                        class="absolute 2xl:left-[35%] xl:left-[31%] lg:left-[33%] sm:left-[29%] left-[9%] xl:top-[16%] top-[12%] box1 opacity-0 xl:max-w-[440px] sm:max-w-[350px] max-w-[311px]">
                     <img src="assets/images/png/chat.png" alt="box-icons"
                         class="absolute 2xl:left-[35%] sm:left-[29%] left-[14%] top-[14%] box2 opacity-0 xl:max-w-[533px] sm:max-w-[415px] max-w-[289px]" >
                     <img src="assets/images/png/nex-chat.png" alt="box-icons"
@@ -51,7 +51,7 @@
                     <img src="assets/images/png/mail-lock.png" alt="box-icons"
                         class="absolute 2xl:left-[41%] max-w-[308px] lg:left-[38%] sm:left-[33%] left-[11%]  xl:top-[34%] sm:top-[32%] top-[29%] box5 opacity-0">
                     <img src="assets/images/png/details.png" alt="box-icons"
-                        class="absolute 2xl:left-[26%] lg:left-[22%] sm:left-[15%] left-[11%] sm:top-[14%] top-[12%] box6 opacity-0 xl:max-w-[747px] sm:max-w-[560px] max-w-[300px] max-sm:h-[315px]">
+                        class="absolute 2xl:left-[26%] lg:left-[22%] sm:left-[15%] left-[11%] sm:top-[14%] xl:top-[18%] top-[12%] box6 opacity-0 xl:max-w-[717px] sm:max-w-[560px] max-w-[300px] max-sm:h-[315px]">
 
                 </div>
                 <div class="flex flex-wrap justify-center items-center buttons max-w-[1295px] mx-auto ">
@@ -141,14 +141,14 @@
             );
             tl.fromTo(".box",
                 {
-                    y: 100,
+                   
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                   
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -156,7 +156,8 @@
 
             tl.to(".box", {
                 opacity: 0,
-                duration: 2
+                duration: 2,
+                scale:0
             })
             tl.fromTo(".bottom-img",
                     {
@@ -180,14 +181,14 @@
             );
             tl.fromTo(".box1",
                 {
-                    y: 100,
+                    
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                   
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -195,7 +196,8 @@
             tl.to(".box1",
                 {
                     opacity: 0,
-                    duration: 1,
+                    duration: 2,
+                    scale: 0
                 },
             );
             tl.to(".button1",
@@ -227,14 +229,14 @@
             );
             tl.fromTo(".box2",
                 {
-                    y: 100,
+                    
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                   
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -242,7 +244,8 @@
             tl.to(".box2",
                 {
                     opacity: 0,
-                    duration: 1,
+                    duration: 2,
+                    scale: 0
                 },
             );
             tl.to(".button2",
@@ -274,14 +277,14 @@
             );
             tl.fromTo(".box3",
                 {
-                    y: 100,
+                   
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                   
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -289,7 +292,8 @@
             tl.to(".box3",
                 {
                     opacity: 0,
-                    duration: 1,
+                    duration: 2,
+                    scale: 0
                 },
             );
             tl.to(".button3",
@@ -321,14 +325,14 @@
             );
             tl.fromTo(".box4",
                 {
-                    y: 100,
+                    
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                    
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -336,19 +340,20 @@
             tl.to(".box4",
                 {
                     opacity: 0,
-                    duration: 1,
+                    duration: 2,
+                    scale: 0
                 },
             );
             tl.fromTo(".box5",
                 {
-                    y: 100,
+                    
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                    
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
@@ -382,14 +387,14 @@
             );
             tl.fromTo(".box6",
                 {
-                    y: 100,
+                   
                     opacity: 0,
-                    scale: 1.2
+                    scale: 0
                 },
                 {
-                    y: 0,
+                    
                     opacity: 1,
-                    scale: 1,
+                    scale: 1.2,
                     duration: 1,
 
                 }
