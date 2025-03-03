@@ -40,7 +40,7 @@
                 scrollTrigger: {
                     trigger: ".progress",
                     start: "top top",
-                    end: "+=600%",
+                    end: "+=200%",
                     pin: true,
                     scrub: 2,
                     markers: true,
@@ -48,11 +48,11 @@
             });
 
             tl.to(".custom-line", { width: "30%", duration: 2 })
-                .to(".text1", { opacity: 1, x: 10, duration: 1 }, )
+                .to(".text1", { opacity: 1, x: 10, duration: 1 },"0.5")
                 .to(".custom-line", { width: "60%", duration: 2 })
-                .to(".text2", { opacity: 1, x: 40, duration: 1 }, )
+                .to(".text2", { opacity: 1, x: 40, duration: 1 }, "2.5"  )
                 .to(".custom-line", { width: "100%", duration: 2 })
-                .to(".text3", { opacity: 1, x: 100, duration: 1 }, );
+                .to(".text3", { opacity: 1, x: 100, duration: 1 } , "4.5");
         </script>
     </body>
 
