@@ -13,19 +13,19 @@
             <div class="text-6xl">Scroll down</div>
         </section>
 
-        <section class="progress flex justify-center items-center min-h-screen pt-10">
-            <div class="container mx-auto max-w-[1140px]">
+        <section class="progress flex justify-center items-center min-h-screen pt-10 overflow-hidden">
+            <div class="container mx-auto max-w-[1140px] px-4">
                 <div class="h-1 bg-gray-300 line mt-3 max-w-[1440px] mx-auto relative">
                     <div class="custom-line h-1 bg-purple-900 w-[10%]"></div>
                 </div>
-                <div class="flex mt-10 gap-5">
-                    <p class="max-w-[340px] text opacity-100">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="lg:flex flex-col justify-center items-center mt-10 gap-5">
+                    <p class="max-w-[340px] mt-5 text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p class="max-w-[340px] text1 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="max-w-[340px] mt-5 text1 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p class="max-w-[340px] text2 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="max-w-[340px] mt-5 text2 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p class="max-w-[340px] text3 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <p class="max-w-[340px] mt-5 text3 opacity-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
                 </div>
             </div>
@@ -48,11 +48,11 @@
             });
 
             tl.to(".custom-line", { width: "30%", duration: 2 })
-                .to(".text1", { opacity: 1, x: 10, duration: 1 },"0.5")
+                .to(".text1", { opacity: 1, duration: 1 },"0.5")
                 .to(".custom-line", { width: "60%", duration: 2 })
-                .to(".text2", { opacity: 1, x: 40, duration: 1 }, "2.5"  )
+                .to(".text2", { opacity: 1, duration: 1 }, "2.5"  )
                 .to(".custom-line", { width: "100%", duration: 2 })
-                .to(".text3", { opacity: 1, x: 100, duration: 1 } , "4.5");
+                .to(".text3", { opacity: 1, duration: 1 } , "4.5");
         </script>
     </body>
 
